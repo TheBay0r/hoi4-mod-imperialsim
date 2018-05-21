@@ -1,0 +1,44 @@
+ideologies = {
+	imperialism = {
+		types = {
+			imperialism = {}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_IMPERIALISM_1"
+			"FACTION_NAME_IMPERIALISM_2"
+			"FACTION_NAME_IMPERIALISM_3"
+			"FACTION_NAME_IMPERIALISM_4"
+			"FACTION_NAME_IMPERIALISM_5"
+			"FACTION_NAME_IMPERIALISM_6"
+		}
+		
+		color = { 240 230 140 }
+		
+		rules = {
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		
+		war_impact_on_world_tension = 0.5 # Just another monarch
+		faction_impact_on_world_tension = 0.0
+		
+		modifiers = {
+			generate_wargoal_tension = 0.0
+			join_faction_tension = 0.0
+			lend_lease_tension = 0.5 # Come on, weapons are expensive!
+			send_volunteers_tension = 0.0 # People are not :)
+			annex_cost_factor = -0.25 # We are here to get our place at the sun
+			drift_defence_factor = 0.5
+			puppet_cost_factor = -0.5
+		}
+		
+		can_be_boosted = yes
+		
+		faction_modifiers = {
+		}
+		
+		ai_imperialism = yes
+	}
+}

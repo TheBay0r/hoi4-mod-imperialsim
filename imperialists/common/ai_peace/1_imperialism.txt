@@ -1,0 +1,5 @@
+imperialist_peace = {
+	enable = {
+		has_government = imperialism
+	}
+}
