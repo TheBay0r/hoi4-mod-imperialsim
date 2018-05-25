@@ -412,8 +412,8 @@ country_event = {
 	# It is done (no choice needed because decision was taken in previous focus's events)
 	option = {
 		name = wtt_germany.11.a
-		set_politics = { ruling_party = neutrality elections_allowed = no }
-		add_popularity = { ideology = neutrality popularity = 0.1 }
+		set_politics = { ruling_party = imperialism elections_allowed = no }
+		add_popularity = { ideology = imperialism popularity = 0.1 }
 		swap_ideas = {
 			remove_idea = GER_preparing_ITA_coup
 			add_idea = GER_preparing_ITA_coup2
@@ -944,7 +944,7 @@ country_event = {
 	
 	trigger = {
 		tag = GER
-		has_government = neutrality
+		has_government = imperialism
 		has_completed_focus = GER_revive_the_kaiserreich
 		date > 1939.1.1
 		has_country_leader = { ruling_only = yes name = "Wilhelm II" }
@@ -2360,11 +2360,13 @@ country_event = {
 		OR = {
 			has_government = democratic 
 			has_government = neutrality
+			has_government = imperialism
 		}
 		is_in_faction_with = AUS
 		OR = {
 			AUS = { has_government = democratic }
 			AUS = { has_government = neutrality }
+			AUS = { has_government = imperialism }
 		}
 	}
 
@@ -3022,16 +3024,16 @@ country_event = {
 		name = wtt_germany.71.a
 		if = {
 			limit = {
-				NOT = { has_government = neutrality }
+				NOT = { has_government = imperialism }
 			}
-			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_politics = { ruling_party = imperialism elections_allowed = no }
 		}
 		create_country_leader = {
 			name = "Otto von Habsburg"
 			desc = "POLITICS_OTTO_VON_HABSBURG_DESC"
 			picture = GFX_Portrait_hungary_otto_von_hapsburg
 			expire = "1965.1.1"
-			ideology = despotism
+			ideology = imperialism
 			traits = {
 				
 			}
@@ -3102,9 +3104,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { has_government = neutrality }
+				NOT = { has_government = imperialism }
 			}
-			set_politics = { ruling_party = neutrality elections_allowed = no }
+			set_politics = { ruling_party = imperialism elections_allowed = no }
 		}
 		add_ai_strategy = {
 			type = alliance
