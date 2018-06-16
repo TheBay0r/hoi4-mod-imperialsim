@@ -1602,6 +1602,25 @@ ideas = {
 				factor = 0
 			}
 		}
+
+		otto_schmidt_hannover = {
+
+			allowed = { 
+				original_tag = GER
+			}
+
+			traits = { imperial_orator }
+
+			do_effect = {
+				NOT = {
+					has_government = imperialism
+				}
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
 		
 		rudolf_hess = {
 
